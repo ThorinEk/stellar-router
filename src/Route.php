@@ -100,9 +100,9 @@ class Route
 
     /**
      * Get the route handlerClass
-     * @return ?string route handlerClass
+     * @return ?object route handlerClass
      */
-    public function getHandlerClass(): ?stdClass
+    public function getHandlerClass(): ?object
     {
         return new $this->handlerClass;
     }
