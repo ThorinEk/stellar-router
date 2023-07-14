@@ -3,6 +3,7 @@
 namespace StellarRouter;
 
 use Attribute;
+use stdClass;
 
 #[Attribute(Attribute::TARGET_METHOD)]
 class Route
@@ -101,9 +102,9 @@ class Route
      * Get the route handlerClass
      * @return ?string route handlerClass
      */
-    public function getHandlerClass(): ?string
+    public function getHandlerClass(): ?stdClass
     {
-        return $this->handlerClass;
+        return new $this->handlerClass;
     }
 
     /**

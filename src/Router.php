@@ -82,7 +82,7 @@ class Router
      * Handle the HTTP request and return class and endpoint for matched route
      * @param string $requestMethod request specified resource
      * @param string $requestUri request uniform resource identifier
-     * @return ?array matched route
+     * @return ?Route matched route
      */
     public function handleRequest(
         string $requestMethod,
